@@ -1,0 +1,13 @@
+:root {
+    font-family: cascadia code;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black
+}
+
+a:hover {
+    color: orange;
+}
