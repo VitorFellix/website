@@ -1,13 +1,35 @@
 :root {
     font-family: cascadia code;
+    text-align: center;
+}
+
+header {
+    margin-bottom:3rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    color: black
+    padding: 0.5rem;
+    margin: 0.1rem 0.5rem;
+    color: aliceblue;
+    background-color: black;
 }
 
 a:hover {
     color: orange;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+.link-button {
+    margin: 1rem 0;
+    display: inline-block;
 }
