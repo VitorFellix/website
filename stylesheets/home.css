@@ -1,0 +1,8 @@
+header {
+    text-align: center;
+    margin: 2% 0 0;
+}
+
+header h1 {
+    position: static;
+}

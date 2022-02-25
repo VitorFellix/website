@@ -1,35 +1,81 @@
 :root {
-    font-family: cascadia code;
-    text-align: center;
+	font-family: roboto;
+	text-align: center;
 }
 
-header {
-    margin-bottom:3rem;
+.lil-picture {
+	width: 3.5rem;
+	height: 6.2rem;
+	border: 2px solid black;
+}
+
+.lil-picture:active {
+	border-color: cornflowerblue;
 }
 
 h1 {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    margin: 0.1rem 0.5rem;
-    color: aliceblue;
-    background-color: black;
+h2 {
+	font-size: 2.2rem;
 }
 
-a:hover {
-    color: orange;
+header {
+	text-align: left;
 }
 
-footer {
-    margin-top: 3rem;
+.page-title {
+	display: flex;
+	text-align: left;
+	margin: 2rem;
 }
 
-.link-button {
-    margin: 1rem 0;
-    display: inline-block;
+.page-title h1 {
+    margin: 0 1rem;
+}
+
+.page-links {
+    display: inline;
+	text-align: left;
+	margin: 0;
+}
+
+.button {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: aliceblue;
+	background-color: black;
+	border: 2px solid black;
+	padding: 0.5rem;
+	margin: 0.1rem 0.5rem;
+}
+
+.page-links a:hover {
+	color: cornflowerblue;
+}
+
+.page-links a:active {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+
+.main-picture {
+	margin: 1rem;
+	width: 20%;
+	height: 40%;
+	border: 3px solid black;
+}
+
+form input,
+form textarea {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+form label {
+	display: block;
 }
