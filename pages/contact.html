@@ -8,23 +8,50 @@
     <link rel="stylesheet" href="../stylesheets/base.css" />
   </head>
   <body>
-    <div class="page-title">
-        <a href="home.html">
-            <img class="lil-picture" src="../clouds.jpg" />
-        </a>
-        <div class="page-links">
-            <h1>Contact</h1>
-          <a href="aboutme.html" class="button">About me</a>
-          <a href="favorites.html" class="button">Favorites sites</a>
-        </div>
-    </div>
     <header>
+      <div class="page-title">
+        <a href="home.html" class="home-button">
+          <img class="lil-picture" src="../clouds.jpg" />
+        </a>
+        <h1>Contact</h1>
+        <div class="page-title">
+          <a href="aboutme.html" class="page-button">About me</a>
+          <a href="sites.html" class="page-button">Sites</a>
+          <hr>
+        </div>
+      </div>
     </header>
     <main>
       <form>
-        <label>Nome<input type="text" id="nome" /></label>
-        <label>Email<input type="email" id="email" /></label>
-        <label>Message<textarea type="text" id="msg"></textarea></label>
+        <fieldset>
+          <label
+            >Name<input type="text" id="nome" required placeholder="Joe Mama"
+          /></label>
+          <label
+            >Email<input
+              type="email"
+              id="email"
+              required
+              placeholder="Email@domain.com"
+          /></label>
+          <label
+            >Message<textarea
+              type="text"
+              id="msg"
+              required
+              placeholder="Ligma balls"
+            ></textarea>
+          </label>
+
+          Select me
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+
+          <input type="submit" value="Send" class="submit-button" />
+        </fieldset>
       </form>
     </main>
   </body>
