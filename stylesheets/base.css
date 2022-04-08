@@ -1,10 +1,20 @@
 @font-face {
 	font-family: robotosa;
-	src: url(/resources/Roboto/Roboto-Regular.ttf);
+	src: url(../resources/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: robotosa2;
+	src: url(../resources/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+	font-family: robotosa3;
+	src: url(../resources/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
 }
 
 :root {
-	font-family: robotosa;
+	font-family: robotosa3;
 	text-align: center;
 }
 
