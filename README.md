@@ -1,2 +1,2 @@
-# Basic-Webpage
-I'm relearning html, css and javascript so this is just a basic webpage.
+# Static-Webpage
+I'm learning the basics of html, css and javascript and applying them on this webpage.
