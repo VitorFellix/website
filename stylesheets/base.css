@@ -1,20 +1,22 @@
+/* 
 @font-face {
-	font-family: robotosa;
+	font-family: RobotoRegular;
 	src: url(../resources/Roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
-	font-family: robotosa2;
+	font-family: RobotoCondensed;
 	src: url(../resources/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
 
 @font-face {
-	font-family: robotosa3;
+	font-family: RobotoSlab;
 	src: url(../resources/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
 }
+*/
 
 :root {
-	font-family: robotosa3;
+	font-family: Roboto, sans-serif;
 	text-align: center;
 }
 
