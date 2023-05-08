@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Welcome to my page!</title>
 
-    <link rel="stylesheet" href="../stylesheets/reset.css" />
-    <link rel="stylesheet" href="../stylesheets/base.css" />
-    <link rel="stylesheet" href="../stylesheets/home.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-  </head>
-  <body>
-    <header>
-      <h1>Home</h1>
-    </header>
-    <main>
-      <img class="main-picture" src="../resources/clouds.jpg" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Felix's Website</title>
+
+  <link rel="stylesheet" href="./stylesheets/reset.css" />
+  <link rel="stylesheet" href="./stylesheets/base.css" />
+  <link rel="stylesheet" href="./stylesheets/home.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+</head>
+
+<body>
+  <header>
+    <!-- TODO: Make a button to change from dark mode to light mode and back -->
+    <h1>Welcome</h1>
+  </header>
+  <div class="content">
+    <aside class="index-sidebar">
+      <img class="welcome-picture" src="./resources/clouds.jpg" />
+      <!-- TODO: Make subtitle change everytime you enter the website -->
+      <p class="welcome-picture-subtitle">"the sky is as beautiful as you are."</p>
+    </aside>
+    <main class="main">
+      <!-- TODO: Make picture change everytime you enter the website -->
+      <a href="./pages/aboutme.html" class="button">About me</a>
+      <a href="./pages/sites.html" class="button">Sites</a>
+      <a href="./pages/contact.html" class="button">Contact</a>
+      <a href="./pages/aboutme.html" class="button">About me</a>
+      <a href="./pages/sites.html" class="button">Sites</a>
+      <a href="./pages/contact.html" class="button">Contact</a>
+      <a href="./pages/aboutme.html" class="button">About me</a>
+      <a href="./pages/sites.html" class="button">Sites</a>
     </main>
-    <footer>
-      <div>
-        <a href="/pages/aboutme.html" class="page-button">About me</a>
-        <a href="/pages/sites.html" class="page-button">Sites</a>
-        <a href="/pages/contact.html" class="page-button">Contact</a>
-      </div>
-    </footer>
-  </body>
+  </div>
+  <footer>
+  </footer>
+</body>
+
 </html>

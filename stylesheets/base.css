@@ -1,23 +1,7 @@
-/* 
-@font-face {
-	font-family: RobotoRegular;
-	src: url(../resources/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-	font-family: RobotoCondensed;
-	src: url(../resources/Roboto_Condensed/RobotoCondensed-Regular.ttf);
-}
-
-@font-face {
-	font-family: RobotoSlab;
-	src: url(../resources/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
-}
-*/
-
 :root {
 	font-family: Roboto, sans-serif;
-	text-align: center;
+	margin-left: 17%;
+	margin-right: 17%;
 }
 
 h1 {
@@ -28,65 +12,69 @@ h2 {
 	font-size: 2.4rem;
 }
 
-.lil-picture {
-	width: 3.5rem;
-	height: 6.2rem;
-	border: 2px solid black;
+.content{
+	background-image: linear-gradient(to bottom, seashell, whitesmoke);
+	display: flex;
+	justify-content: space-between;
+	padding: 1%;
 }
 
-.lil-picture:active {
-	border-color: cornflowerblue;
+.index-sidebar{
+	width: 50%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
-
-.page-title {
-	display: flexbox;
-	margin: 2rem;
+.sidebar{
+	width: 30%;
 }
 
-.page-title h1 {
-	margin: 0 1rem;
+.main{
+	flex: 1;
 }
 
-.page-button,
-.submit-button {
-	display: inline-block;
+.welcome-picture {
+	border: 0.3rem solid black;
+}
+
+.welcome-picture-subtitle {
+	color: grey;
+	font-style: italic;
+	font-size: small;
+}
+
+.basic-page {
+	font-family: Inter;
+	text-align: left;
+	font-size: large;
+}
+
+.button {
+	display: inline-flex;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-align: left;
 	color: aliceblue;
 	border: 2px solid black;
 	background-color: black;
 	padding: 0.7rem;
 	margin: 0.1rem 0.5rem 1rem;
 	transition: 0.2s all;
+	text-align: left;
+	width: 50%;
 }
 
-.page-button {
-	width: 13%;
-	text-align: center;
-}
-
-.page-button:hover,
-.submit-button:hover {
+.button:hover {
 	color: cornflowerblue;
 	cursor: pointer;
 	transform: scale(1.1);
 	font-weight: bolder;
 }
 
-.page-button:active,
-.submit-button:active {
+.button:active  {
 	color: black;
 	background-color: white;
 	border: 2px solid black;
-}
-
-.main-picture {
-	margin: 1rem;
-	width: 20%;
-	height: 40%;
-	border: 3px solid black;
 }
 
 form input,
