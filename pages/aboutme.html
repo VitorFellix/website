@@ -6,6 +6,14 @@
 
     <link rel="stylesheet" href="../stylesheets/reset.css" />
     <link rel="stylesheet" href="../stylesheets/base.css" />
+
+    <script src="../scripts/functions.js"></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("age_var").innerHTML = AgeCalculator(2000, 7, 11);
+      };
+    </script>
+    
   </head>
   <body>
     <header>
@@ -17,17 +25,20 @@
         <div class="page-title">
           <a href="sites.html" class="page-button">Sites</a>
           <a href="contact.html" class="page-button">Contact</a>
-          <hr>
+          <hr />
         </div>
       </div>
     </header>
     <main>
       <h2>Basic information</h2>
-      <br>
-      <p>My name is Vitor Felix</p>
+      <br />
       <p>
-        I work at Simepar - Sistema metereológico do Paraná in Curitiba as a
-        Junior System Analist there
+        My name is Vitor Felix da Silva, I'm <age id="age_var"></age> years old
+      </p>
+      <p>I'm from Brazil, born in Curitiba/Paraná</p>
+      <p>
+        I work as a Junior System Analist at Simepar - Sistema de tecnologia e
+        monitoramento ambiental do Paraná
       </p>
     </main>
     <footer></footer>
