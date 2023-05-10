@@ -12,30 +12,31 @@ h2 {
 	font-size: 2.4rem;
 }
 
-.content{
+.content {
 	background-image: linear-gradient(to bottom, seashell, whitesmoke);
 	display: flex;
-	justify-content: space-between;
-	padding: 1%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
 
-.index-sidebar{
+.index-sidebar {
+	display: flex;
+	justify-content: right;
+	flex-direction: column;
+	background-color: aqua;
 	width: 50%;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
 }
 
-.sidebar{
-	width: 30%;
-}
-
-.main{
-	flex: 1;
+.main {
+	display: flex;
+	justify-content: left;
+	width: 50%;
 }
 
 .welcome-picture {
 	border: 0.3rem solid black;
+	width: 10rem;
 }
 
 .welcome-picture-subtitle {
@@ -51,7 +52,6 @@ h2 {
 }
 
 .button {
-	display: inline-flex;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: aliceblue;
@@ -60,8 +60,6 @@ h2 {
 	padding: 0.7rem;
 	margin: 0.1rem 0.5rem 1rem;
 	transition: 0.2s all;
-	text-align: left;
-	width: 50%;
 }
 
 .button:hover {
@@ -75,17 +73,4 @@ h2 {
 	color: black;
 	background-color: white;
 	border: 2px solid black;
-}
-
-form input,
-form textarea {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-}
-
-form label {
-	display: block;
-	margin: 0.5rem;
 }
