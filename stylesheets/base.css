@@ -1,11 +1,11 @@
 :root {
 	font-family: Roboto, sans-serif;
-	margin-left: 17%;
-	margin-right: 17%;
+	background-color: #e6e6e6;
 }
 
 h1 {
 	font-size: 3rem;
+	margin: 1rem;
 }
 
 h2 {
@@ -30,15 +30,17 @@ h2 {
 
 .flex-item-right {
 	align-items: start;
+	border-left: 0.5rem solid black;
+	width: 33%;
 }
 
 .flex-item-left {
 	align-items: end;
+	width: 77%;
 }
 
 .welcome-picture {
-	border: 0.3rem solid black;
-	width: 70%;
+	width: 100%;
 }
 
 .welcome-picture-subtitle {
@@ -60,7 +62,7 @@ h2 {
 	border: 2px solid black;
 	background-color: black;
 	padding: 0.7rem;
-	margin: 0.1rem 0.5rem 1rem;
+	margin: 0.5rem 0rem 0rem;
 	transition: 0.2s all;
 }
 
