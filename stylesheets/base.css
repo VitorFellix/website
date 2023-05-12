@@ -12,35 +12,37 @@ h2 {
 	font-size: 2.4rem;
 }
 
-.content {
-	background-image: linear-gradient(to bottom, seashell, whitesmoke);
+.flex-container {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: center;
 }
 
-.index-sidebar {
+.flex-item, .flex-item-right, .flex-item-left {
 	display: flex;
-	justify-content: right;
 	flex-direction: column;
-	background-color: aqua;
+	justify-content: flex-start;
+	/* border: 0.3rem solid black; */
 	width: 50%;
+
 }
 
-.main {
-	display: flex;
-	justify-content: left;
-	width: 50%;
+.flex-item-right {
+	align-items: start;
+}
+
+.flex-item-left {
+	align-items: end;
 }
 
 .welcome-picture {
 	border: 0.3rem solid black;
-	width: 10rem;
+	width: 70%;
 }
 
 .welcome-picture-subtitle {
-	color: grey;
+	color: black;
 	font-style: italic;
 	font-size: small;
 }
