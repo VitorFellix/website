@@ -10,3 +10,32 @@ function AgeCalculator(year, month, day) {
     // console.log("birthday ->", birthday);
     return age;
 }
+
+document.addEventListener("DOMContentLoaded", (e) => {
+    const form = document.querySelector("#messageForm");
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            SubmitForm(e, this);
+        });
+    }
+})
+
+function SubmitForm(e, message_form) {
+    e.preventDefault();
+
+    var message = message_form.querySelector("#msg").value;
+
+    alert("Sorry but this doesn't work yet. xD")
+
+    // fetch('https://jsonplaceholder.typicode.com/posts/1', {
+    //     method: 'PUT',
+    //     body: JSON.stringify({
+    //         message: message
+    //     }),
+    //     headers: {
+    //         'Content-type': 'application/json; charset=UTF-8',
+    //     },
+    // })
+    //     .then((response) => response.json())
+    //     .then((json) => console.log(json));
+}

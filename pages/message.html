@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="../stylesheets/reset.css" />
   <link rel="stylesheet" href="../stylesheets/base.css" />
+
+  <script src="../scripts/functions.js"></script>
 </head>
 
 <body>
@@ -19,17 +21,16 @@
   <hr />
   <main class="page-title">
     <div class="text-content">
-      <form class="flex-column-centered">
+      <div class="flex-column-centered">
         <h1>Send me a message</h1>
         <p>Anything send through this will be annonimous, I will receive on my email but I don't know who send it.</p>
-        <br />
-        <fieldset>
-          <!-- <label>Message: -->
-          <textarea type="text" id="msg" required placeholder="Your message"></textarea></label>
+        <form id="messageForm">
           <br />
-          <input type="submit" value="Send" class="button" />
-        </fieldset>
-      </form>
+          <textarea type="text" name="message" id="msg" required placeholder="Your message"></textarea></label>
+          <br />
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
     </div>
   </main>
 </body>
