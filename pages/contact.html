@@ -1,58 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contact</title>
 
-    <link rel="stylesheet" href="../stylesheets/reset.css" />
-    <link rel="stylesheet" href="../stylesheets/base.css" />
-  </head>
-  <body>
-    <header>
-      <div class="page-title">
-        <a href="../index.html" class="home-button">
-          <img class="lil-picture" src="../resources/clouds.jpg" />
-        </a>
-        <h1>Contact</h1>
-        <div class="page-title">
-          <a href="../pages/aboutme.html" class="nav-button">About me</a>
-          <a href="../pages/sites.html" class="nav-button">Sites</a>
-          <hr />
-        </div>
-      </div>
-    </header>
-    <main>
-      <form>
-        <fieldset>
-          <label
-            >Name<input type="text" id="nome" required placeholder="Joe Mama"
-          /></label>
-          <label
-            >Email<input
-              type="email"
-              id="email"
-              required
-              placeholder="Email@domain.com"
-          /></label>
-          <label
-            >Message<textarea
-              type="text"
-              id="msg"
-              required
-              placeholder="Ligma balls"
-            ></textarea>
-          </label>
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
 
-          Select me
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
+  <link rel="stylesheet" href="../stylesheets/reset.css" />
+  <link rel="stylesheet" href="../stylesheets/base.css" />
+</head>
 
-          <input type="submit" value="Send" class="submit-button" />
-        </fieldset>
-      </form>
-    </main>
-  </body>
+<body>
+  <header>
+    <div class="page-title">
+      <a href="../index.html" class="nav-button">home</a>
+      <a href="../pages/aboutme.html" class="nav-button">about me</a>
+    </div>
+  </header>
+  <hr />
+  <main class="text-content">
+    <form>
+      <h1>Contact</h1>
+      <fieldset class="flex-fieldset">
+        <label>Message:</label>
+        <textarea type="text" id="msg" required placeholder="Your message"></textarea>
+        <input type="submit" value="Send" class="submit-button" />
+      </fieldset>
+    </form>
+    <p>Anything send through this will be annonimous, I will receive on my email but I don't know who send it.</p>
+  </main>
+</body>
+
 </html>

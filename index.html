@@ -7,32 +7,26 @@
 
   <link rel="stylesheet" href="./stylesheets/reset.css" />
   <link rel="stylesheet" href="./stylesheets/base.css" />
-  <link rel="stylesheet" href="./stylesheets/home.css" />
+  <link rel="stylesheet" href="./stylesheets/index-page.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
 </head>
 
-<body>
-  <!-- <header> -->
+<body class="flex-column-centered">
+  <header>
     <!-- TODO: Dark mode and light mode button -->
-  <!-- </header> -->
-  <div class="flex-container">
-    <div class="flex-item-left">
-      <img class="welcome-picture" src="./resources/clouds.jpg" />
-      <!-- TODO: Change subtitle everytime -->
-    </div>
-    <main class="flex-item-right">
-      <h1>Hello there :D</h1>
-      <p class="welcome-picture-subtitle">"the sky is as beautiful as you are."</p>
+    <h1>welcome!</h1> 
+  </header>
+  <main>
+      <!-- TODO: Change subtitle everytime you enter -->
+      <!-- TODO: Change picture everytime you enter-->
       <!-- TODO: API and controllers for showing notion's database on the website -->
-      <!-- TODO: Change picture everytime -->
-      <a href="./pages/aboutme.html" class="button">About me</a>
-      <a href="./pages/sites.html" class="button">Sites</a>
-      <!-- TODO: New page for books that I have read -->
-      <!-- <a href="./pages/books.html" class="button">Livros</a> -->
-      <a href="./pages/contact.html" class="button">Contact</a>
-    </main>
-  </div>
-  <footer>
+      <img class="welcome-picture" src="./resources/clouds.jpg" />
+      <p class="welcome-picture-subtitle">"see ya in heaven."</p>
+  </main>
+  <footer class="flex-row-spaced">
+      <a href="./pages/aboutme.html" class="button">about me</a>
+      <a href="./pages/books.html" class="button">books</a>
+      <a href="./pages/contact.html" class="button">contact</a>
   </footer>
 </body>
 
