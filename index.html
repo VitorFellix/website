@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Welcome to my page!</title>
 
-    <link rel="stylesheet" href="../stylesheets/reset.css" />
-    <link rel="stylesheet" href="../stylesheets/base.css" />
-    <link rel="stylesheet" href="../stylesheets/home.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-  </head>
-  <body>
-    <header>
-      <h1>Home</h1>
-    </header>
-    <main>
-      <img class="main-picture" src="../resources/clouds.jpg" />
-    </main>
-    <footer>
-      <div>
-        <a href="/pages/aboutme.html" class="page-button">About me</a>
-        <a href="/pages/sites.html" class="page-button">Sites</a>
-        <a href="/pages/contact.html" class="page-button">Contact</a>
-      </div>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Felix's Website</title>
+
+  <link rel="stylesheet" href="./stylesheets/reset.css" />
+  <link rel="stylesheet" href="./stylesheets/base.css" />
+  <link rel="stylesheet" href="./stylesheets/index-page.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+</head>
+
+<body class="flex-column-centered">
+  <header>
+    <!-- TODO: Dark mode and light mode button -->
+    <h1>welcome!</h1> 
+  </header>
+  <main>
+      <!-- TODO: Change subtitle everytime you enter -->
+      <!-- TODO: Change picture everytime you enter-->
+      <!-- TODO: API and controllers for showing notion's database on the website -->
+      <img class="welcome-picture" src="./resources/clouds.jpg" />
+      <p class="welcome-picture-subtitle">"see ya in heaven."</p>
+  </main>
+  <footer class="flex-row-spaced">
+      <a href="./pages/aboutme.html" class="button">about me</a>
+      <!-- <a href="./pages/books.html" class="button">programming</a>
+      <a href="./pages/books.html" class="button">anime</a>
+      <a href="./pages/books.html" class="button">cars</a>
+      <a href="./pages/books.html" class="button">books</a> -->
+      <a href="./pages/message.html" class="button">send me a message</a>
+  </footer>
+</body>
+
 </html>
