@@ -3,6 +3,7 @@ header {
 }
 
 .welcome-picture {
+	border-radius: .3rem;
     border: 0.25rem solid black;
     max-width: 50%;
     max-height: 50%;
