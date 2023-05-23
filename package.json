@@ -1,0 +1,37 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Cool website where I can develop features and create what I like in it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress",
+    "watch": "webpack --progress --watch",
+    "dev-server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorFellix/website.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Vitor Felix da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitorFellix/website/issues"
+  },
+  "homepage": "https://github.com/VitorFellix/website#readme",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "node": "^20.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}

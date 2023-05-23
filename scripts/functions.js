@@ -1,3 +1,5 @@
+import * as moment from 'moment';
+
 function AgeCalculator(year, month, day) {
     // Date uses month values beggining on 0, so 7 is august, 6 is july and so on
     let birthday = new Date(year, month - 1, day, 0, 0, 0, 0);
