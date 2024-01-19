@@ -6,9 +6,11 @@ function AgeCalculator(year, month, day) {
     if (now.getMonth() < birthday.getMonth() || now.getMonth() == birthday.getMonth() && now.getDate() < birthday.getDate()) {
         age -= 1;
     }
-    // console.log("now ->", now);
-    // console.log("birthday ->", birthday);
     return age;
+}
+
+function RandomNumber() {
+	return Math.floor(Math.random() * 100);
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
