@@ -4,7 +4,7 @@
   "description": "Vitor Felix's website, made without any JS framework.",
   "main": "index.html",
   "scripts": {
-	"start": "http-server",
+	"build": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
