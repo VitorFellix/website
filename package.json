@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Vitor Felix's website, made without any JS framework.",
+  "main": "index.html",
+  "scripts": {
+	"start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorFellix/website.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Vitor Felix da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitorFellix/website/issues"
+  },
+  "homepage": "https://github.com/VitorFellix/website#readme"
+}
