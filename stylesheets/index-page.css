@@ -1,21 +1,43 @@
-header {
+/* header {
     text-align: center;
-}
+    margin: 1rem;
+    width: 33%;
+    height: 2rem;
+} */
 
 .welcome-picture {
-	border-radius: .3rem;
-    border: 0.25rem solid black;
-    max-width: 50%;
-    max-height: 50%;
-    min-width: 5%;
-    min-height: 5%;
+    margin-top: 1rem;
+	border-radius: 0.3rem;
+	border: 0.25rem solid black;
+	max-width: 50%;
+	max-height: 50%;
+	min-width: 5%;
+	min-height: 5%;
 }
 
-.welcome-picture-subtitle {
-    color: black;
-    font-style: italic;
-    font-size: small;
-    text-decoration: none;
-    text-transform: capitalize;
-    margin: 0.3rem 0rem 1rem 0rem;
+.subtitle {
+	color: grey;
+	font-style: italic;
+	font-size: small;
+	text-decoration: none;
+	text-transform: initial;
+	animation-name: subtitle;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes subtitle {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+body {
+	background-color: white;
 }

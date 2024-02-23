@@ -20,7 +20,8 @@ h3 {
 	font-size: 2rem;
 }
 
-header {
+header,
+footer {
 	text-transform: capitalize;
 	padding-top: 0.5rem;
 }
@@ -38,7 +39,7 @@ main a:visited {
 }
 
 p {
-	margin: .3rem 0;
+	margin: 0.3rem 0;
 }
 
 textarea {
@@ -58,7 +59,7 @@ textarea {
 .flex-fieldset textarea {
 	width: 50%;
 	height: 10rem;
-	margin: .2rem;
+	margin: 0.2rem;
 }
 
 .flex-column-centered {
@@ -101,9 +102,9 @@ textarea {
 
 .button,
 .nav-button {
-	border-radius: .3rem;
+	border-radius: 0.3rem;
 	color: aliceblue;
-	border: .1rem solid black;
+	border: 0.1rem solid black;
 	background-color: black;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -127,11 +128,11 @@ textarea {
 .nav-button:active {
 	color: cornflowerblue;
 	background-color: black;
-	border-radius: .3rem;
+	border-radius: 0.3rem;
 }
 
 .profile-picture {
-	border-radius: .3rem;
+	border-radius: 0.3rem;
 	display: flex;
 	flex-direction: column;
 	border: 0.25rem solid black;
