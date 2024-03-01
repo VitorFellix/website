@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Message</title>
+
+		<link rel="stylesheet" href="../stylesheets/reset.css" />
+		<link rel="stylesheet" href="../stylesheets/base.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost" />
+
+		<script type="application/javascript" src="../scripts/functions.js"></script>
+	</head>
+
+	<body class="flex-column-centered">
+		<header>
+			<div class="page-title">
+				<a href="../index.html" class="nav-button">home</a>
+			</div>
+			<hr />
+		</header>
+		<main>
+			<div>
+				<input type="file" id="select-file"/>
+			</div>
+			<div style="margin-top: 1rem;">
+				<input type="button" id="send-file" value="send it" onclick="{
+                    var a = document.getElementById('select-file')
+                    console.log(a.value)
+                }"/>
+			</div>
+		</main>
+	</body>
+</html>
