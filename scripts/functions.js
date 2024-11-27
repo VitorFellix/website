@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 function RandomFromArray(array) {
 	var index = Math.floor(Math.random() * array.length);
 	var result = array.at(index);
+	console.log(array, result);
 	return result;
 }
 
