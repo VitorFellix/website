@@ -16,7 +16,6 @@ function RandomNumber() {
 function RandomFromArray(array) {
 	var index = Math.floor(Math.random() * array.length);
 	var result = array.at(index);
-	console.log(array, result);
 	return result;
 }
 
@@ -26,13 +25,9 @@ function SubmitForm(e, message_form) {
 	var message = message_form.querySelector('#msg').value;
 
 	const response = fetch('/api/message', {
-		method: 'GET',
-		//body: JSON.stringify({
-		//	message: message
-		//}),
-		headers: {
-			'Content-type': 'application/json; charset=UTF-8',
-		},
+		method: 'POST',
+		body: JSON.stringify({ message: message }),
+		headers: { 'Content-type': 'application/json; charset=UTF-8', },
 	})
 		.then((response) => response.json())
 		.then((json) => console.log(json));
@@ -56,9 +51,39 @@ function createBook(title, description, stars) {
 	return book
 }
 
+function populateHeader() {
+	const header = document.getElementById('page-header');
+	const navigation = document.createElement('div');
+
+	navigation.setAttribute("class", "page-title");
+
+	function createLink(text, link) {
+		const path = window.location.pathname;
+		let filename = path.substring(path.lastIndexOf('/') + 1);
+		if (filename === "index.html") {
+			filename = "home.html"
+		}
+		if (filename != text + ".html") {
+			const html = document.createElement('a');
+			html.setAttribute("href", link);
+			html.setAttribute("class", "nav-button");
+			html.innerText = text;
+			navigation.append(html);
+		}
+	}
+
+	createLink("home", "/index.html");
+	createLink("about-me", "/pages/about-me.html");
+	createLink("message", "/pages/message.html");
+	createLink("books", "/pages/books.html");
+	createLink("art", "/pages/art.html");
+
+	header.append(navigation);
+	header.append(document.createElement('hr'));
+}
+
 document.addEventListener('DOMContentLoaded', (e) => {
-	console.log(document.title);
-	console.log(e);
+	populateHeader();
 
 	if (document.title == "Message") {
 		const form = document.querySelector('#messageForm');

@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>Felix's Website</title>
 
-		<link rel="stylesheet" href="./stylesheets/reset.css" />
-		<link rel="stylesheet" href="./stylesheets/base.css" />
-		<link rel="stylesheet" href="./stylesheets/index-page.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost" />
+<head>
+	<meta charset="UTF-8" />
+	<title>Felix's Website</title>
 
-		<script type="application/javascript" src="scripts/script.js"></script>
-		<script>
-			window.onload = function () {
-				fetch('resources/subtitles.txt')
-					.then((response) => response.text())
-					.then((text) => text.split('\n'))
-					.then((result) => (document.getElementById('subtitle').innerHTML = RandomFromArray(result)));
-			};
-		</script>
-	</head>
+	<link rel="stylesheet" href="./stylesheets/reset.css" />
+	<link rel="stylesheet" href="./stylesheets/base.css" />
+	<link rel="stylesheet" href="./stylesheets/index-page.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost" />
 
-	<body class="flex-column-centered">
-		<header>
-			<div class="page-title">
-				<a href="./pages/aboutme.html" class="nav-button">about me</a>
-				<a href="./pages/books.html" class="nav-button">books</a>
-				<a href="./pages/art.html" class="nav-button">art</a>
-				<a href="./pages/message.html" class="nav-button">send me a message</a>
-			</div>
-		</header>
-		<main>
-			<img class="welcome-picture" src="./resources/clouds.jpg" />
-			<p id="subtitle" class="subtitle"></p>
-		</main>
-		<footer class="flex-row-spaced"></footer>
-	</body>
+	<script type="application/javascript" src="scripts/script.js"></script>
+	<script>
+		window.onload = function () {
+			fetch('resources/subtitles.txt')
+				.then((response) => response.text())
+				.then((text) => text.split('\n'))
+				.then((result) => (document.getElementById('subtitle').innerHTML = RandomFromArray(result)));
+		};
+	</script>
+</head>
+
+<body class="flex-column-centered">
+	<header id="page-header"></header>
+	<main>
+		<img class="welcome-picture" src="./resources/clouds.jpg" />
+		<p id="subtitle" class="subtitle"></p>
+	</main>
+	<footer class="flex-row-spaced"></footer>
+</body>
+
 </html>
