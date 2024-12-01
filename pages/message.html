@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>Message</title>
 
-		<link rel="stylesheet" href="../stylesheets/reset.css" />
-		<link rel="stylesheet" href="../stylesheets/base.css" />
+<head>
+	<meta charset="UTF-8" />
+	<title>Message</title>
 
-		<script type="application/javascript" src="../scripts/functions.js"></script>
-	</head>
+	<link rel="stylesheet" href="../stylesheets/reset.css" />
+	<link rel="stylesheet" href="../stylesheets/base.css" />
 
-	<body>
-		<header>
-			<div class="page-title">
-				<a href="../index.html" class="nav-button">home</a>
-				<a href="./aboutme.html" class="nav-button">about me</a>
+	<script type="application/javascript" src="../scripts/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="page-title">
+			<a href="../index.html" class="nav-button">home</a>
+			<a href="./aboutme.html" class="nav-button">about me</a>
+		</div>
+	</header>
+	<hr />
+	<main class="page-title">
+		<div class="text-content">
+			<div class="flex-column-centered">
+				<h1>Send me a message</h1>
+				<p>Anything send through this will be annonimous, I will receive on my email but I don't know who send
+					it.</p>
+				<form id="messageForm">
+					<br />
+					<textarea type="text" name="message" id="msg" required placeholder="Your message"></textarea>
+					<br />
+					<button type="submit" class="button">Send</button>
+				</form>
 			</div>
-		</header>
-		<hr />
-		<main class="page-title">
-			<div class="text-content">
-				<div class="flex-column-centered">
-					<h1>Send me a message</h1>
-					<p>Anything send through this will be annonimous, I will receive on my email but I don't know who send it.</p>
-					<form id="messageForm">
-						<br />
-						<textarea type="text" name="message" id="msg" required placeholder="Your message"></textarea>
-						<br />
-						<button type="submit" class="button">Send</button>
-					</form>
-				</div>
-			</div>
-		</main>
-	</body>
+		</div>
+	</main>
+</body>
+
 </html>
