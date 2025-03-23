@@ -60,9 +60,11 @@ function populateHeader() {
 	function createLink(text, link) {
 		const path = window.location.pathname;
 		let filename = path.substring(path.lastIndexOf('/') + 1);
-		if (filename === "index.html") {
+
+		if (filename === "index.html" || filename === "") {
 			filename = "home.html"
 		}
+
 		if (filename != text + ".html") {
 			const html = document.createElement('a');
 			html.setAttribute("href", link);

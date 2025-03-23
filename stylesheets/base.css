@@ -3,12 +3,11 @@
 }
 
 h {
+	font-weight: bold;
 	margin: 0.3rem;
 }
 
 h1 {
-	font-family: serif;
-	font-weight: bolder;
 	font-size: 3rem;
 }
 
