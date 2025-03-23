@@ -61,17 +61,11 @@ function populateHeader() {
 		const path = window.location.pathname;
 		let filename = path.substring(path.lastIndexOf('/') + 1);
 
-		if (filename === "index.html" || filename === "") {
-			filename = "home.html"
-		}
-
-		if (filename != text + ".html") {
-			const html = document.createElement('a');
-			html.setAttribute("href", link);
-			html.setAttribute("class", "nav-button");
-			html.innerText = text;
-			navigation.append(html);
-		}
+		const html = document.createElement('a');
+		html.setAttribute("href", link);
+		html.setAttribute("class", "nav-button");
+		html.innerText = text;
+		navigation.append(html);
 	}
 
 	createLink("home", "/index.html");
