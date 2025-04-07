@@ -1,0 +1,22 @@
+.holder-centered{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.image {
+	border-color: #000000;
+	border-radius: 6px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	width: 200px;
+}
+
+.card {
+	margin: 10pt;
+	border-radius: 10px;
+	border: 3px solid black;
+}
