@@ -52,26 +52,20 @@ function createBook(title, description, stars) {
 }
 
 function populateHeader() {
-	const header = document.getElementById('page-header');
+	const header = document.getElementById('nav-buttons-header');
 	const navigation = document.createElement('div');
 
-	navigation.setAttribute("class", "page-title");
+	navigation.setAttribute("class", "nav-buttons");
 
 	function createLink(text, link) {
 		const path = window.location.pathname;
 		let filename = path.substring(path.lastIndexOf('/') + 1);
 
-		if (filename === "index.html" || filename === "") {
-			filename = "home.html"
-		}
-
-		if (filename != text + ".html") {
-			const html = document.createElement('a');
-			html.setAttribute("href", link);
-			html.setAttribute("class", "nav-button");
-			html.innerText = text;
-			navigation.append(html);
-		}
+		const html = document.createElement('a');
+		html.setAttribute("href", link);
+		html.setAttribute("class", "nav-button");
+		html.innerText = text;
+		navigation.append(html);
 	}
 
 	createLink("home", "/index.html");

@@ -1,22 +1,14 @@
-/* header {
-    text-align: center;
-    margin: 1rem;
-    width: 33%;
-    height: 2rem;
-} */
+body {
+	background-color: #f0f0f0;
+}
 
 .welcome-picture {
     margin-top: 1rem;
-	border-radius: 0.3rem;
-	border: 0.25rem solid black;
-	max-width: 50%;
-	max-height: 50%;
-	min-width: 5%;
-	min-height: 5%;
+	max-width: 20%;
 }
 
 .subtitle {
-	color: grey;
+	color: black;
 	font-style: italic;
 	font-size: small;
 	text-decoration: none;
@@ -36,8 +28,4 @@
 		opacity: 1;
 		transform: none;
 	}
-}
-
-body {
-	background-color: white;
 }
