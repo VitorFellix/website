@@ -2,22 +2,13 @@ body {
 	background-color: #f0f0f0;
 }
 
-/* header {
-    text-align: center;
-    margin: 1rem;
-    width: 33%;
-    height: 2rem;
-} */
-
 .welcome-picture {
     margin-top: 1rem;
-	border-radius: 0.3rem;
-	border: 0.25rem solid black;
-	max-height: 40%;
+	max-width: 20%;
 }
 
 .subtitle {
-	color: grey;
+	color: black;
 	font-style: italic;
 	font-size: small;
 	text-decoration: none;

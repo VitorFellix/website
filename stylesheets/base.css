@@ -49,6 +49,13 @@ textarea {
 	margin-bottom: 1rem;
 }
 
+.page-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 90%;
+}
+
 .flex-fieldset {
 	display: flex;
 	flex-direction: column;
@@ -87,18 +94,19 @@ textarea {
 	justify-content: space-between;
 }
 
-.page-title {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	text-align: center;
-}
-
 .text-content {
 	font-family: sans-serif;
 	text-align: left;
 	font-size: large;
 	margin: 1rem;
+}
+
+.nav-buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
 }
 
 .button,
@@ -111,9 +119,8 @@ textarea {
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 0.6rem 1.2rem;
-	margin: 0rem 1rem;
-	min-width: 11rem;
-	max-width: 20rem;
+	margin: 1rem;
+	width: 15%;
 	transition: 0.2s all;
 }
 
@@ -133,10 +140,13 @@ textarea {
 }
 
 .profile-picture {
-	border-radius: 0.3rem;
 	display: flex;
 	flex-direction: column;
-	border: 0.25rem solid black;
 	margin: 1rem;
 	width: 20rem;
+}
+
+.black-border {
+	border-radius: 0.3rem;
+	border: 0.25rem solid black;
 }
