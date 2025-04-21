@@ -36,16 +36,19 @@ function SubmitForm(e, message_form) {
 
 function createBook(title, description, stars) {
 	const book = document.createElement('div');
+	book.setAttribute("class", "card black-border");
+
 	const book_title = document.createElement('h3');
 	book_title.innerText = title;
 
 	const book_description = document.createElement('p');
-	book_description.innerText = description;
+	book_description.innerText = "Synopsis: " + description;
 
 	const book_stars = document.createElement('p');
-	book_stars.innerText = stars;
+	book_stars.innerText = "Stars: " + stars;
 
 	book.append(book_title);
+	book.append(book_stars);
 	book.append(book_description);
 
 	return book
@@ -94,9 +97,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		const library = document.getElementById("books-holder");
 		// TODO: make an array of books
 		// TODO: get books instead of createBook
-		const book1 = createBook("Dune Vol I", "Very nice", 4);
-		const book2 = createBook("Dune Vol II", "Not nice", 2);
-		const book3 = createBook("Dune Vol III", "Meh", 3);
+		const book1 = createBook("Dune", "A young noble rises as a messianic figure to avenge his family and reshape a desert world’s destiny", 4);
+		const book2 = createBook("Dune Messiah", "Power’s cost becomes clear as the emperor-prophet faces betrayal, prophecy, and self-doubt.", 2);
+		const book3 = createBook("Children of Dune", "Paul’s legacy threatens to unravel as his children grapple with their fate and the weight of prescience.", 3);
 
 		library.append(book1);
 		library.append(book2);

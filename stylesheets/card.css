@@ -9,10 +9,7 @@
 
 .image {
 	border-radius: 0.7rem;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
 	width: 100%;
-	height: 100%;
 }
 
 .card:hover {
@@ -24,7 +21,10 @@
 }
 
 .card {
+	border-radius: 0.7rem;
 	background-color: #f0f0f0;
-	margin: 5%;
-	width: 15%;
+	padding: 1rem;
+	margin: 1rem;
+	min-height: 16rem;
+	width: 15rem;
 }
